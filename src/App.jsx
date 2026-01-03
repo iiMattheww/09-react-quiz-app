@@ -5,6 +5,7 @@ function App() {
     <>
         <Header></Header>
         <main>
+            <Quiz />
         </main>
     </>;
 }
