@@ -17,7 +17,10 @@ export default function Quiz() {
         });
     }, []);
 
-    
+    const handleSkipAnswer = useCallback(
+        () => handleSelectAnswer(null),
+        [handleSelectAnswer]
+    );
 
     if (quizIsComplete) {
         return (
